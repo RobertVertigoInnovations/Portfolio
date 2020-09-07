@@ -8,11 +8,7 @@
 import Navigation from './components/Navigation'
 export default {
   name: 'app',
-  data() {
-    return {
-      key: value
-    }
-  },
+
   components: {
     Navigation: Navigation
   }
@@ -26,21 +22,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: -10px;
-  margin-left: -5px;
-  margin-right: -5px;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  background-image: url('../src/assets/background_color.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100vh;
 }
 </style>
