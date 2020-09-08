@@ -25,13 +25,13 @@
 </template>
 
 <script>
-import ProjectList from '@/components/ProjectList.vue'
+import ProjectList from "@/components/ProjectList.vue";
 export default {
-  name: 'UIUXprojects',
+  name: "UIUXprojects",
   components: {
     ProjectList: ProjectList
   }
-}
+};
 </script>
 <style>
 .cardOverlay {

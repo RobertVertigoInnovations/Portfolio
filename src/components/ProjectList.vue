@@ -1,25 +1,24 @@
 <template>
   <div class="theList">
     <select id="selectCustomize">
-      <option v-for="todo in projectList" :key="todo.name" id="selectOverlay">
-        {{ todo.name }}
-      </option>
+      <option v-for="item in projectList" :key="item.name" id="selectOverlay">
+        {{ item.name } }</option>
     </select>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ProjectList',
+  name: "ProjectList",
   data() {
     return {
       projectList: [
-        { name: 'Place Holder 1', value: 'Value of PH 1' },
-        { name: 'Place Holder 2', value: 'Value of PH 2' }
+        { name: "Place Holder 1", value: "Value of PH 1" },
+        { name: "Place Holder 2", value: "Value of PH 2" }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
