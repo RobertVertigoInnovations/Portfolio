@@ -2,7 +2,8 @@
   <div class="theList">
     <select id="selectCustomize">
       <option v-for="item in projectList" :key="item.name" id="selectOverlay">
-        {{ item.name } }</option>
+        {{ item.name } }</option
+      >
     </select>
   </div>
 </template>

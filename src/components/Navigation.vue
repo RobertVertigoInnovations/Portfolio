@@ -3,25 +3,26 @@
     <nav>
       <img id="imageVal" alt="Vue logo" src="../assets/Banner_No_Buttons.gif" />
 
-      <router-link to="/"
-        ><img
+      <router-link to="/">
+        <img
           id="homeButton"
           :src="homeButton"
           @mouseover="homeButton = homeButtonReturnHover"
           @mouseleave="homeButton = homeButtonReturn"
-      /></router-link>
+        />
+      </router-link>
 
-      <router-link to="/about"
-        ><img id="aboutMeButton" :src="aboutMeButtonReturn"
-      /></router-link>
+      <router-link to="/about">
+        <img id="aboutMeButton" :src="aboutMeButtonReturn" />
+      </router-link>
 
-      <router-link to="/projects"
-        ><img id="projectsButton" :src="projectsButtonReturn"
-      /></router-link>
+      <router-link to="/projects">
+        <img id="projectsButton" :src="projectsButtonReturn" />
+      </router-link>
 
-      <router-link to="/"
-        ><img id="contactMeButton" :src="contactMeButtonReturn"
-      /></router-link>
+      <router-link to="/">
+        <img id="contactMeButton" :src="contactMeButtonReturn" />
+      </router-link>
     </nav>
     <router-view />
   </div>
@@ -29,22 +30,22 @@
 
 <script>
 export default {
-  el: '#navigation',
+  el: "#navigation",
   data() {
     return {
-      homeButton: require('../assets/Home.gif'),
-      homeButtonReturn: require('../assets/Home.gif'),
-      homeButtonReturnHover: require('../assets/AnimatedHome.gif'),
+      homeButton: require("../assets/Home.gif"),
+      homeButtonReturn: require("../assets/Home.gif"),
+      homeButtonReturnHover: require("../assets/AnimatedHome.gif"),
 
-      aboutMeButtonReturn: require('../assets/AboutMe.png'),
+      aboutMeButtonReturn: require("../assets/AboutMe.png"),
       //aboutMeButtonReturn: require('../assets/AboutMe.png'),
 
-      projectsButtonReturn: require('../assets/Projects.png'),
+      projectsButtonReturn: require("../assets/Projects.png"),
 
-      contactMeButtonReturn: require('../assets/Home.gif')
-    }
+      contactMeButtonReturn: require("../assets/Home.gif")
+    };
   }
-}
+};
 </script>
 
 <style>
